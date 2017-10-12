@@ -24,4 +24,8 @@ describe("Record", function() {
     assert.strictEqual(record.price, 10);
   });
 
+  it("should be able to print its properties as a string", function() {
+    assert.strictEqual(record.print(), "Artist: Converge, Title: Jane Doe, Genre: Hardcore, Price: 10");
+  })
+
 })
